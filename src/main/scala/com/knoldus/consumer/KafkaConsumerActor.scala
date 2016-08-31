@@ -6,6 +6,7 @@ import scala.concurrent.duration.DurationInt
 
 
 class KafkaConsumerActor(consumer: Consumer, workers: ActorRef) extends Actor {
+ import context.dispatcher
 
   import KafkaConsumerActor._
 
